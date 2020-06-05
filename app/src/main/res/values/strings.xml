@@ -2,6 +2,6 @@
     <string name="app_name">Event Easy</string>
     <string name="usuario">Usuário</string>
     <string name="novoUser">Novo usuário? </string>
-    <string name="scadastrese"> Cadastre-se</string>
+    <string name="scadastrese">Cadastre-se</string>
     <string name="cadComo">Cadastrar-se como:</string>
 </resources>

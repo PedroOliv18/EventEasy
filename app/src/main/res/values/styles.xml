@@ -10,7 +10,7 @@
 
     <style name="StyledTilEditTextTheme">
         <item name="colorControlNormal">#FFFFFF</item>item> // Cor padrão da linha
-        <item name="colorControlActivated">#f6ac35</item>item> // Cor linha e texto quando recebe foco
+        <item name="colorControlActivated">#F3AB35</item>item> // Cor linha e texto quando recebe foco
     </style>style>
 
     <style name="StyledTilEditText">
