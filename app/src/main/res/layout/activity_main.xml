@@ -43,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logo">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginEmail"
             style="@style/StyledTilEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -68,6 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginSenha"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Senha"
@@ -75,7 +77,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/entrar"
+        android:id="@+id/loginBtEntrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -97,7 +99,7 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entrar">
+        app:layout_constraintTop_toBottomOf="@+id/loginBtEntrar">
 
         <TextView
             android:id="@+id/textView"

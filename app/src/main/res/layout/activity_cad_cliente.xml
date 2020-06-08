@@ -43,6 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logo">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadCliUsuario"
             style="@style/StyledTilEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -70,6 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/usuario">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadCliSenha"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Senha"
@@ -92,6 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/senha">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadCliEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Email"
@@ -114,6 +117,7 @@
         app:layout_constraintTop_toBottomOf="@+id/email">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadCliTelefone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Telefone"
@@ -136,6 +140,7 @@
         app:layout_constraintTop_toBottomOf="@+id/telefone">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cadCliDataNasc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:ems="10"
@@ -145,7 +150,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/entrar"
+        android:id="@+id/cadCliBtEntrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"

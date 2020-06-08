@@ -37,6 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/logo">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresnome"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Nome"
@@ -54,6 +55,7 @@
             app:layout_constraintTop_toBottomOf="@+id/nome">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresUsuario"
                 style="@style/StyledTilEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -76,6 +78,7 @@
             app:layout_constraintTop_toBottomOf="@+id/usuario">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Email"
@@ -94,6 +97,7 @@
             app:layout_constraintTop_toBottomOf="@+id/email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Telefone"
@@ -113,6 +117,7 @@
             app:layout_constraintTop_toBottomOf="@+id/telefone">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresDatanasc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:ems="10"
@@ -133,6 +138,7 @@
             app:layout_constraintTop_toBottomOf="@+id/dataNasc">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresSenha"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Senha"
@@ -140,7 +146,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/entrar"
+            android:id="@+id/cadPresBtEntrar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
