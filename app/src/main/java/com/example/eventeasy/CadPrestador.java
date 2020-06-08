@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class cadPrestador extends AppCompatActivity {
+public class CadPrestador extends AppCompatActivity {
 
     private EditText nome, usuario, email, telefone, dataNasc, senha;
     private Button btEntrar;
@@ -29,7 +29,7 @@ public class cadPrestador extends AppCompatActivity {
         btEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(cadPrestador.this, "cadastrado com sucesso", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CadPrestador.this, "cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             }
         });
     }

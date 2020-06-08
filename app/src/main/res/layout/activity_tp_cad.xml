@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fundoinicio"
     android:orientation="vertical"
-    tools:context=".tpCad">
+    tools:context=".TpCad">
 
     <TextView
         android:id="@+id/textView2"

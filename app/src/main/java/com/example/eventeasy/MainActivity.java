@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         cadastrese.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(MainActivity.this, tpCad.class);
+                Intent it = new Intent(MainActivity.this, TpCad.class);
                 startActivity(it);
             }
 

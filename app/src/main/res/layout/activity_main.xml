@@ -28,7 +28,7 @@
             app:srcCompat="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
+        android:id="@+id/senha"
         style="@style/StyledTilEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/senha"
+        android:id="@+id/email"
         style="@style/StyledTilEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email">
+        app:layout_constraintTop_toBottomOf="@+id/senha">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/loginSenha"
@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <LinearLayout
         android:id="@+id/relativeLayout"

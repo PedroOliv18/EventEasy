@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-public class tpCad extends AppCompatActivity {
+public class TpCad extends AppCompatActivity {
 
     ImageButton btCliente;
     ImageButton btPrestador;
@@ -24,14 +23,14 @@ public class tpCad extends AppCompatActivity {
 
         btCliente.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(tpCad.this, cadCliente.class);
+                Intent it = new Intent(TpCad.this, CadCliente.class);
                 startActivity(it);
             }
 
         });
         btPrestador.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(tpCad.this, cadPrestador.class);
+                Intent it = new Intent(TpCad.this, CadPrestador.class);
                 startActivity(it);
             }
 
