@@ -21,6 +21,7 @@ public class UsuarioDAO {
         values.put("senha", usuario.getSenha());
         values.put("telefone", usuario.getTelefone());
         values.put("dataNasc", usuario.getDataNasc());
+        values.put("categoria", usuario.getCategoria());
 
         return banco.insert("usuario", null, values);
     }

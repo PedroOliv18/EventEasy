@@ -2,6 +2,7 @@ package com.example.eventeasy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,9 +41,14 @@ public class CadCliente extends AppCompatActivity {
             u.setSenha(senha.getText().toString());
             u.setTelefone(telefone.getText().toString());
             u.setDataNasc(datanasc.getText().toString());
+            u.setCategoria("cliente");
 
             long id = dao.inserir(u);
             Toast.makeText(CadCliente.this, "Id: "+id, Toast.LENGTH_SHORT).show();
+
+            Intent it = new Intent(CadCliente.this, TpCad.class);
+            startActivity(it);
+            finish();
         }
     });
 

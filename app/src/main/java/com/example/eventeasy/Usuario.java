@@ -5,8 +5,16 @@ import java.io.Serializable;
 public class Usuario implements Serializable {
 
     private Integer id;
-    private String nome, email, telefone, senha;
+    private String nome, email, telefone, senha, categoria;
     private String dataNasc;
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 
     public String getDataNasc() {
         return dataNasc;
