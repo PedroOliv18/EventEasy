@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Entrando", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent(MainActivity.this, MenuInicialActivity.class);
+                startActivity(it);
             }
         });
 

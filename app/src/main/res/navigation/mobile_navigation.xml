@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.eventeasy.ui.home.HomeFragment"
+        android:label="Início"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_espacos"
+        android:name="com.example.eventeasy.ui.home.EspacosFragment"
+        android:label="Espaços"
+        tools:layout="@layout/espacos_fragment" />
+
+    <fragment
+        android:id="@+id/nav_servicos"
+        android:name="com.example.eventeasy.ui.home.ServicosFragment"
+        android:label="Serviços"
+        tools:layout="@layout/servicos_fragment" />
+
+    <fragment
+        android:id="@+id/nav_criarAnuncio"
+        android:name="com.example.eventeasy.ui.home.CriarAnuncioFragment"
+        android:label="Criar Anúncio"
+        tools:layout="@layout/criar_anuncio_fragment" />
+    
+</navigation>

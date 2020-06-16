@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_home" >
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carrossel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="15dp"
+        app:fillColor="#FFFFFFFF"
+        app:radius="4dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/txtDestaque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destaque"
+        android:layout_below="@+id/carrossel"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textFontWeight="900"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearDestaque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtDestaque">
+
+        <ImageView
+            android:id="@+id/destaque1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtDestaque"
+            android:layout_marginRight="13dp"
+            app:srcCompat="@drawable/destaque1" />
+
+        <ImageView
+            android:id="@+id/destaque2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/destaque2"
+            android:layout_marginRight="13dp"/>
+
+        <ImageView
+            android:id="@+id/destaque3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/destaque3" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearDestaque"
+        android:text="Categoria"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textFontWeight="900"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/btsCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtCategoria"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btEspaco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shbtespaco"
+            android:text="Serviço"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginRight="13dp" />
+
+        <Button
+            android:id="@+id/btServico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shbtservico"
+            android:text="Espaço"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

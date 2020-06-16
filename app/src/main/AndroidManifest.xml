@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_eventeasy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".MenuInicialActivity"
+            android:label="@string/title_activity_menu_inicial"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +23,7 @@
         <activity android:name=".CadPrestador" />
         <activity android:name=".CadCliente" />
         <activity android:name=".TpCad" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
