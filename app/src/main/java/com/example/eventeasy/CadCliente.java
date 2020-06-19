@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class CadCliente extends AppCompatActivity {
 
-    private EditText nome, senha, email, telefone, datanasc;
+    private EditText nome, senha,cpf, email, telefone, datanasc;
     private Button btentrar;
     private UsuarioDAO dao;
 
@@ -21,8 +21,9 @@ public class CadCliente extends AppCompatActivity {
         setContentView(R.layout.activity_cad_cliente);
 
         nome = findViewById(R.id.cadCliNome);
-        senha = findViewById(R.id.cadCliSenha);
         email = findViewById(R.id.cadCliEmail);
+        cpf = findViewById(R.id.cadCliCpf);
+        senha = findViewById(R.id.cadCliSenha);
         telefone = findViewById(R.id.cadCliTelefone);
         datanasc = findViewById(R.id.cadCliDataNasc);
         btentrar = findViewById(R.id.cadCliBtEntrar);
@@ -38,13 +39,14 @@ public class CadCliente extends AppCompatActivity {
             Usuario u = new Usuario();
             u.setNome(nome.getText().toString());
             u.setEmail(email.getText().toString());
+            u.setCpf(cpf.getText().toString());
             u.setSenha(senha.getText().toString());
             u.setTelefone(telefone.getText().toString());
             u.setDataNasc(datanasc.getText().toString());
             u.setCategoria("cliente");
 
             long id = dao.inserir(u);
-            Toast.makeText(CadCliente.this, "Id: "+id, Toast.LENGTH_SHORT).show();
+            Toast.makeText(CadCliente.this, "Id: "+ id, Toast.LENGTH_SHORT).show();
 
             Intent it = new Intent(CadCliente.this, TpCad.class);
             startActivity(it);

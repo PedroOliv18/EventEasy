@@ -18,6 +18,7 @@ public class UsuarioDAO {
         ContentValues values = new ContentValues();
         values.put("nome", usuario.getNome());
         values.put("email", usuario.getEmail());
+        values.put("cpf", usuario.getEmail());
         values.put("senha", usuario.getSenha());
         values.put("telefone", usuario.getTelefone());
         values.put("dataNasc", usuario.getDataNasc());

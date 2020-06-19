@@ -45,21 +45,40 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/usuario"
+            android:id="@+id/email"
+            style="@style/StyledTilEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadPresEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpf"
             style="@style/StyledTilEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nome">
+            app:layout_constraintTop_toBottomOf="@+id/email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/cadPresUsuario"
+                android:id="@+id/cadPresCpf"
                 style="@style/StyledTilEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/usuario"
+                android:hint="CPF/CNPJ"
                 android:shadowColor="#FFFFFF"
                 android:textColor="#FFFFFF" />
 
@@ -75,14 +94,17 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/usuario">
+            app:layout_constraintTop_toBottomOf="@+id/cpf">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/cadPresEmail"
+            <EditText
+                android:id="@+id/cadPresSenha"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Email"
-                android:textColor="#FFFFFF" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -126,24 +148,6 @@
                 android:textColor="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
-            style="@style/StyledTilEditText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dataNasc">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/cadPresSenha"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Senha"
-                android:textColor="#FFFFFF" />
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/cadPresBtEntrar"
@@ -151,9 +155,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/botaoinicio"
+            android:onClick="botaoPres"
             android:text="Cadastrar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email" />
+            app:layout_constraintTop_toBottomOf="@+id/dataNasc" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

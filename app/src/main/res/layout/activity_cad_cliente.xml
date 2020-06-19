@@ -17,137 +17,164 @@
         android:orientation="vertical">
 
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usuario"
-        style="@style/StyledTilEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cadCliNome"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nome"
             style="@style/StyledTilEditText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Nome"
-            android:shadowColor="#FFFFFF"
-            android:textColor="#FFFFFF" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadCliNome"
+                style="@style/StyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nome"
+                android:shadowColor="#FFFFFF"
+                android:textColor="#FFFFFF" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
-        style="@style/StyledTilEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="27dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/senha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuario">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cadCliEmail"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="E-mail"
-            android:textColor="#FFFFFF" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            style="@style/StyledTilEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/cpf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/senha"
-        style="@style/StyledTilEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadCliEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="E-mail"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cadCliSenha"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Senha"
-            android:textColor="#FFFFFF" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cpf"
+            style="@style/StyledTilEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/senha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/telefone"
-        style="@style/StyledTilEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadCliCpf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="CPF"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cadCliTelefone"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Telefone"
-            android:textColor="#FFFFFF" />
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/dataNasc"
-        style="@style/StyledTilEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefone">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/senha"
+            style="@style/StyledTilEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cpf">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cadCliDataNasc"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:ems="10"
-            android:hint="Data de nascimento"
-            android:inputType="number"
-            android:textColor="#FFFFFF" />
-    </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/cadCliSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telefone"
+            style="@style/StyledTilEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/senha">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadCliTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Telefone"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dataNasc"
+            style="@style/StyledTilEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cadCliDataNasc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Data de nascimento"
+                android:inputType="number"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/cadCliBtEntrar"

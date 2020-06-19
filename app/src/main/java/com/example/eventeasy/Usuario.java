@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Usuario implements Serializable {
 
     private Integer id;
-    private String nome, email, telefone, senha, categoria;
+    private String nome, email,cpf, telefone, senha, categoria;
     private String dataNasc;
 
     public String getCategoria() {
@@ -14,6 +14,14 @@ public class Usuario implements Serializable {
 
     public void setCategoria(String categoria) {
         this.categoria = categoria;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getDataNasc() {
