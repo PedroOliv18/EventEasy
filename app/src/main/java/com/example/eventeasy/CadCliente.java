@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.github.rtoshiro.util.format.SimpleMaskFormatter;
+import com.github.rtoshiro.util.format.text.MaskTextWatcher;
+
 public class CadCliente extends AppCompatActivity {
 
     private EditText nome, senha,cpf, email, telefone, datanasc;
@@ -29,6 +32,20 @@ public class CadCliente extends AppCompatActivity {
         btentrar = findViewById(R.id.cadCliBtEntrar);
 
         dao = new UsuarioDAO(this);
+
+        //Criando máscaras para os campos
+
+        //Máscara para o campo telefone
+        SimpleMaskFormatter snfTelefone = new SimpleMaskFormatter("(NN) N NNNN-NNNN");
+        MaskTextWatcher mtwTelefone = new MaskTextWatcher(telefone,snfTelefone);
+        telefone.addTextChangedListener(mtwTelefone);
+
+        //máscara para a data de nascimento
+        SimpleMaskFormatter snfDataNasc = new SimpleMaskFormatter("NN/NN/NNNN");
+        MaskTextWatcher mtwDataNasc = new MaskTextWatcher(datanasc,snfDataNasc);
+        datanasc.addTextChangedListener(mtwDataNasc);
+
+        //Fim das máscara
     }
 
     public void botao(View view){
