@@ -10,10 +10,8 @@
 
     <style name="StyledTilEditTextTheme">
         <item name="colorControlNormal">#FFFFFF</item>item> // Cor padrão da linha
-        <item name="colorControlActivated">#F3AB35</item>item> // Cor linha e texto quando recebe
-        foco
+        <item name="colorControlActivated">#F3AB35</item>item> // Cor linha e texto quando recebe foco
     </style>
-    style>
 
     <style name="StyledTilEditText">
         <item name="android:theme">@style/StyledTilEditTextTheme</item>item>
@@ -27,8 +25,6 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
 
 </resources>

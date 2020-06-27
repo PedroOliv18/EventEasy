@@ -16,9 +16,20 @@
             android:id="@+id/nav_servicos"
             android:icon="@drawable/ic_search"
             android:title="Serviços" />
-        <item
-            android:id="@+id/nav_criarAnuncio"
-            android:icon="@drawable/ic_pen"
-            android:title="Criar Anúncio" />
+
+        <item android:title="Para o prestador">
+            <menu>
+                <item
+                    android:id="@+id/nav_criarAnuncio"
+                    android:icon="@drawable/ic_pen"
+                    android:title="Criar Anúncio" />
+                <item android:id="@+id/nav_meusAnuncios"
+                    android:icon="@drawable/ic_talento"
+                    android:title="Meus Anúncio" />
+                <item android:id="@+id/nav_sair"
+                    android:icon="@drawable/ic_fora"
+                    android:title="Sair" />
+            </menu>
+        </item>
     </group>
 </menu>

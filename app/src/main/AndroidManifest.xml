@@ -9,21 +9,35 @@
         android:roundIcon="@mipmap/ic_eventeasy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.CriarServico"></activity>
+        <activity android:name=".ui.home.CriarEspaco" />
+        <activity android:name=".ui.home.OpcaoAnuncio" />
         <activity
             android:name=".MenuInicialActivity"
             android:label="@string/title_activity_menu_inicial"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Splash">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadPrestador" />
-        <activity android:name=".CadCliente" />
-        <activity android:name=".TpCad" />
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".CadPrestador"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CadCliente"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TpCad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

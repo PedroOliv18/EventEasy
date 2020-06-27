@@ -23,10 +23,20 @@
         android:label="Serviços"
         tools:layout="@layout/servicos_fragment" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_criarAnuncio"
-        android:name="com.example.eventeasy.ui.home.CriarAnuncioFragment"
+        android:name="com.example.eventeasy.ui.home.OpcaoAnuncio"
         android:label="Criar Anúncio"
-        tools:layout="@layout/criar_anuncio_fragment" />
+        tools:layout="@layout/activity_opcao_anuncio" />
+
+    <fragment
+        android:id="@+id/nav_meusAnuncios"
+        android:name="com.example.eventeasy.ui.home.MeusAnunciosFragment"
+        android:label="Meus Anúncios"
+        tools:layout="@layout/meus_anuncios_fragment" />
+
+    <fragment
+        android:id="@+id/nav_sair"
+        android:label="Sair" />
     
 </navigation>
