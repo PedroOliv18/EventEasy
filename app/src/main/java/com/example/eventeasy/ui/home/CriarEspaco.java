@@ -12,5 +12,9 @@ public class CriarEspaco extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_espaco);
+        setTitle("");
+        //Seta voltar no appBar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }

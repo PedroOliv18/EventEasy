@@ -12,5 +12,8 @@ public class CriarServico extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_servico);
+        setTitle("");
+        //Seta voltar no appBar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
