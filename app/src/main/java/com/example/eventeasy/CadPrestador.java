@@ -62,7 +62,7 @@ public class CadPrestador extends AppCompatActivity {
             u.setSenha(senha.getText().toString());
             u.setTelefone(telefone.getText().toString());
             u.setDataNasc(dataNasc.getText().toString());
-            u.setCategoria("cliente");
+            u.setCategoria("prestador");
 
             long id = dao.inserir(u);
             Toast.makeText(CadPrestador.this, "Id: "+id, Toast.LENGTH_SHORT).show();

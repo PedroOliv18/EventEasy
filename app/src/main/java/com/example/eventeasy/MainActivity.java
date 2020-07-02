@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView cadastrese;
     private EditText email, senha;
     private Button btEntrar;
+    private UsuarioDAO uD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +27,22 @@ public class MainActivity extends AppCompatActivity {
         senha = findViewById(R.id.loginSenha);
         btEntrar = findViewById(R.id.loginBtEntrar);
 
+        uD = new UsuarioDAO(this);
+
         btEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Entrando", Toast.LENGTH_SHORT).show();
-                Intent it = new Intent(MainActivity.this, MenuInicialActivity.class);
-                startActivity(it);
+                boolean acesso = uD.acessar(email.getText().toString(), senha.getText().toString());
+
+                if(acesso == true){
+                    Toast.makeText(MainActivity.this, "Entrando", Toast.LENGTH_SHORT).show();
+                    Intent it = new Intent(MainActivity.this, MenuInicialActivity.class);
+                    startActivity(it);
+                }else{
+                    Toast.makeText(MainActivity.this, "erro", Toast.LENGTH_SHORT).show();
+                }
+
+
             }
         });
 
