@@ -75,8 +75,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="E-mail"
-                android:shadowColor="#FFFFFF"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

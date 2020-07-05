@@ -20,7 +20,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:background="?attr/colorPrimary"
-                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="50dp">
+
+                        <androidx.appcompat.widget.SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/barraprocurar"
+                            app:searchIcon="@drawable/procurar"
+                            app:closeIcon="@drawable/cancelar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            style="@style/StyledSearch"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.appcompat.widget.Toolbar>
 
             </com.google.android.material.appbar.AppBarLayout>
 

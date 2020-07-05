@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_eventeasy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.CriarServico"></activity>
+        <activity android:name=".ui.home.CriarServico"/>
         <activity android:name=".ui.home.CriarEspaco" />
         <activity android:name=".ui.home.OpcaoAnuncio" />
         <activity
@@ -38,17 +38,15 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
-        //voltando para a tela anterior
         <activity-alias android:name=".ui.home.CriarEspaco"
             android:parentActivityName=".ui.home.OpcaoAnuncio"
             android:targetActivity=".ui.home.CriarEspaco" />
         <activity-alias android:name=".ui.home.CriarServico"
             android:parentActivityName=".ui.home.OpcaoAnuncio"
             android:targetActivity=".ui.home.CriarServico" />
-
-<!--        <activity-alias android:name=".ui.home.OpcaoAnuncio"
+        <activity-alias android:name=".ui.home.OpcaoAnuncio"
             android:parentActivityName=".ui.home.HomeFragment"
-            android:targetActivity=".ui.home.OpcaoAnuncio" />-->
+            android:targetActivity=".ui.home.OpcaoAnuncio" />
     </application>
 
 </manifest>

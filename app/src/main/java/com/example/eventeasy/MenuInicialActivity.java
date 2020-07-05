@@ -8,6 +8,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -27,6 +28,9 @@ public class MenuInicialActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu_inicial);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        SearchView searchView = (SearchView) findViewById(R.id.searchView);
+        searchView.setIconifiedByDefault(false);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
