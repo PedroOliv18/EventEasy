@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/nav_servicos"
-        android:name="com.example.eventeasy.ui.home.ServicosFragment"
+        android:name="com.example.eventeasy.ui.home.ItemServicoFragment"
         android:label="Serviços"
-        tools:layout="@layout/servicos_fragment" />
+        tools:layout="@layout/fragment_item_servico_list" />
 
     <activity
         android:id="@+id/nav_criarAnuncio"

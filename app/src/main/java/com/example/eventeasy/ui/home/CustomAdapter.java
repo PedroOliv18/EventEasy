@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.eventeasy.Conexao;
 import com.example.eventeasy.R;
 
 import java.util.ArrayList;
@@ -23,28 +24,20 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     private Context context;
     private Activity activity;
-    private ArrayList tarefa_id, txtTitulo, txtPreco, txtTipo, imageView;
+    private ArrayList servico_id, servico_Titulo, servico_Descricao, servico_Preco, servico_Tipo, servico_Endereco;
 
-    CustomAdapter(Activity activity, Context context, ArrayList tarefa_id, ArrayList txtTitulo, ArrayList txtPreco,
-                  ArrayList txtTipo, ArrayList imageView) {
+    CustomAdapter(Activity activity, Context context, ArrayList servico_id, ArrayList servico_Titulo, ArrayList servico_Descricao, ArrayList servico_Preco,
+                  ArrayList servico_Tipo, ArrayList servico_Endereco) {
         this.activity = activity;
         this.context = context;
-        this.tarefa_id = tarefa_id;
-        this.txtTitulo = txtTitulo;
-        this.txtPreco = txtPreco;
-        this.txtTipo = txtTipo;
-        this.imageView = imageView;
+        this.servico_id = servico_id;
+        this.servico_Titulo = servico_Titulo;
+        this.servico_Descricao = servico_Descricao;
+        this.servico_Preco = servico_Preco;
+        this.servico_Tipo = servico_Tipo;
+        this.servico_Endereco = servico_Endereco;
     }
 
-    public CustomAdapter(Context context, ServicosFragment servicosFragment, ArrayList<String> tarefa_id, ArrayList<String> txtTitulo, ArrayList<String> txtPreco, ArrayList<String> txtTipo, ArrayList<String> imageView) {
-        this.activity = activity;
-        this.context = context;
-        this.tarefa_id = tarefa_id;
-        this.txtTitulo = txtTitulo;
-        this.txtPreco = txtPreco;
-        this.txtTipo = txtTipo;
-        this.imageView = imageView;
-    }
 
     @NonNull
     @Override
@@ -54,47 +47,44 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         return new MyViewHolder(view);
     }
 
-
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
-//        holder.tarefa_nome_txt.setText(String.valueOf(tarefa_nome.get(position)));
-//        holder.tarefa_la_txt.setText(String.valueOf(tarefa_latitude.get(position)));
-//        holder.tarefa_lon_txt.setText(String.valueOf(tarefa_longitude.get(position)));
-//        holder.tarefa_sit_txt.setText(String.valueOf(tarefa_situacao.get(position)));
-//        holder.mainLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(context, DadosMapaActivity.class);
-//                intent.putExtra("id", String.valueOf(tarefa_id.get(position)));
-//                intent.putExtra("nomedatarefa", String.valueOf(tarefa_nome.get(position)));
-//                intent.putExtra("latitude", String.valueOf(tarefa_latitude.get(position)));
-//                intent.putExtra("longitude", String.valueOf(tarefa_longitude.get(position)));
-//                intent.putExtra("situacao", String.valueOf(tarefa_situacao.get(position)));
-//                context.startActivity(intent);
-//            }
-//        });
+        holder.servico_nome_txt.setText(String.valueOf(servico_Titulo.get(position)));
+        holder.servico_preco_txt.setText(String.valueOf(servico_Preco.get(position)));
+        holder.servico_tipo_txt.setText(String.valueOf(servico_Tipo.get(position)));
+        holder.servicoLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DadosServicoActivity.class);
+                intent.putExtra("id", String.valueOf(servico_id.get(position)));
+                intent.putExtra("titulo", String.valueOf(servico_Titulo.get(position)));
+                intent.putExtra("descricao", String.valueOf(servico_Descricao.get(position)));
+                intent.putExtra("preco", String.valueOf(servico_Preco.get(position)));
+                intent.putExtra("tipo", String.valueOf(servico_Tipo.get(position)));
+                intent.putExtra("endereco", String.valueOf(servico_Endereco.get(position)));
+                context.startActivity(intent);
+            }
+        });
     }
 
 
     @Override
     public int getItemCount() {
-        return tarefa_id.size();
+        return servico_id.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtTitulo, txtPreco, txtTipo;
-        ImageView imageView;
-        LinearLayout mainLayout;
+        TextView servico_nome_txt, servico_tipo_txt, servico_preco_txt;
+        LinearLayout servicoLayout;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            txtTipo = itemView.findViewById(R.id.txtTitulo);
-            txtPreco = itemView.findViewById(R.id.txtPreco);
-            txtTipo = itemView.findViewById(R.id.txtTipo);
-            imageView = itemView.findViewById(R.id.imageView);
-            mainLayout = itemView.findViewById(R.id.mainLayout);
+            servico_nome_txt = itemView.findViewById(R.id.servico_titulo_txt);
+            servico_tipo_txt = itemView.findViewById(R.id.servico_tipo_txt);
+            servico_preco_txt = itemView.findViewById(R.id.servico_preco_txt);
+            servicoLayout = itemView.findViewById(R.id.servicoLayout);
         }
 
     }

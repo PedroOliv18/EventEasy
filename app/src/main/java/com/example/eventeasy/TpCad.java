@@ -10,8 +10,6 @@ import android.widget.ImageButton;
 
 public class TpCad extends AppCompatActivity {
 
-    ImageButton btCliente;
-    ImageButton btPrestador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
