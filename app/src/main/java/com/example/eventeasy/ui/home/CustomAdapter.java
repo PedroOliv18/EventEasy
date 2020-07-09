@@ -56,14 +56,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.servicoLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, DadosServicoActivity.class);
-                intent.putExtra("id", String.valueOf(servico_id.get(position)));
-                intent.putExtra("titulo", String.valueOf(servico_Titulo.get(position)));
-                intent.putExtra("descricao", String.valueOf(servico_Descricao.get(position)));
-                intent.putExtra("preco", String.valueOf(servico_Preco.get(position)));
-                intent.putExtra("tipo", String.valueOf(servico_Tipo.get(position)));
-                intent.putExtra("endereco", String.valueOf(servico_Endereco.get(position)));
-                context.startActivity(intent);
+//                Intent intent = new Intent(context, DadosServicoActivity.class);
+//                intent.putExtra("id", String.valueOf(servico_id.get(position)));
+//                intent.putExtra("titulo", String.valueOf(servico_Titulo.get(position)));
+//                intent.putExtra("descricao", String.valueOf(servico_Descricao.get(position)));
+//                intent.putExtra("preco", String.valueOf(servico_Preco.get(position)));
+//                intent.putExtra("tipo", String.valueOf(servico_Tipo.get(position)));
+//                intent.putExtra("endereco", String.valueOf(servico_Endereco.get(position)));
+//                context.startActivity(intent);
             }
         });
     }

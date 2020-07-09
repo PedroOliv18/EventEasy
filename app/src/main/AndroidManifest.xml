@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_eventeasy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.DadosServicoActivity"></activity>
         <activity android:name=".ui.home.CriarServico" />
 
         <activity-alias
