@@ -2,6 +2,8 @@ package com.example.eventeasy.ui.home;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -31,9 +33,16 @@ public class EspacosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_espacos);
-        setTitle("");
+        setTitle("Espaços");
         //Seta voltar no appBar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+//        Toolbar toolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//
+//        SearchView searchView = (SearchView) findViewById(R.id.searchView);
+//        searchView.setIconifiedByDefault(false);
+
 
         gridView = (GridView) findViewById(R.id.gridView);
         lista = new ArrayList<>();

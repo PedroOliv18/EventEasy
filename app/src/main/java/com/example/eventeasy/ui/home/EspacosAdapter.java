@@ -22,6 +22,8 @@ public class EspacosAdapter extends BaseAdapter {
     private Context context;
     private int layout;
     private ArrayList<Espaco> espacosLista;
+    private ArrayList tarefa_id, tarefa_nome, tarefa_latitude, tarefa_longitude, tarefa_situacao;
+
 
     public EspacosAdapter(Context context, int layout, ArrayList<Espaco> espacosLista) {
         this.context = context;
@@ -63,25 +65,13 @@ public class EspacosAdapter extends BaseAdapter {
             holder.txtPreco = (TextView) row.findViewById(R.id.espaco_preco_txt);
             holder.txtTipo = (TextView) row.findViewById(R.id.espaco_tipo_txt);
             holder.imageView = (ImageView) row.findViewById(R.id.imageView);
+            holder.espacoLayout = row.findViewById(R.id.espacoLayout);
             row.setTag(holder);
+
         }
         else {
             holder = (EspacosAdapter.ViewHolder) row.getTag();
         }
-
-//        holder.espacoLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(context, DadosMapaActivity.class);
-//                intent.putExtra("id", String.valueOf(tarefa_id.get(position)));
-//                intent.putExtra("nomedatarefa", String.valueOf(espaco_titulo_txt.get(position)));
-//                intent.putExtra("latitude", String.valueOf(tarefa_latitude.get(position)));
-//                intent.putExtra("longitude", String.valueOf(tarefa_longitude.get(position)));
-//                intent.putExtra("situacao", String.valueOf(tarefa_situacao.get(position)));
-//                Toast.makeText(, "", Toast.LENGTH_SHORT).show();
-//                context.startActivity(intent);
-//            }
-//        });
 
         Espaco espaco = espacosLista.get(position);
 

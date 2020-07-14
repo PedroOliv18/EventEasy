@@ -11,33 +11,39 @@
         android:roundIcon="@mipmap/ic_eventeasy"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.EspacosActivity"
+
+        <activity
+            android:name=".ui.home.EspacosActivity"
             android:parentActivityName=".MenuInicialActivity"
-            android:targetActivity=".ui.home.EspacosActivity" />
+            android:targetActivity=".ui.home.EspacosActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".ui.home.ServicosActivity"
             android:parentActivityName=".MenuInicialActivity"
-            android:targetActivity=".ui.home.ServicosActivity" />
-        <activity android:name=".ui.home.CriarServico" />
+            android:targetActivity=".ui.home.ServicosActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity-alias
+        <activity
             android:name=".ui.home.CriarServico"
             android:parentActivityName=".ui.home.OpcaoAnuncio"
-            android:targetActivity=".ui.home.CriarServico" />
+            android:targetActivity=".ui.home.CriarServico"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".ui.home.CriarEspaco" />
 
-        <activity-alias
+        <activity
             android:name=".ui.home.CriarEspaco"
             android:parentActivityName=".ui.home.OpcaoAnuncio"
-            android:targetActivity=".ui.home.CriarEspaco" />
+            android:targetActivity=".ui.home.CriarEspaco"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".ui.home.OpcaoAnuncio" />
 
-        <activity-alias
+        <activity
             android:name=".ui.home.OpcaoAnuncio"
-            android:parentActivityName=".ui.home.HomeFragment"
-            android:targetActivity=".ui.home.OpcaoAnuncio" />
+            android:parentActivityName=".MenuInicialActivity"
+            android:targetActivity=".ui.home.OpcaoAnuncio"
+            android:screenOrientation="portrait"/>
+
 
         <activity
             android:name=".MenuInicialActivity"

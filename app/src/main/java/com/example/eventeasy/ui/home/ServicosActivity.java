@@ -44,7 +44,7 @@ public class ServicosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_servicos);
-        setTitle("");
+        setTitle("Serviços");
         //Seta voltar no appBar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

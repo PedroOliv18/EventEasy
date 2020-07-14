@@ -11,7 +11,7 @@
         android:label="Início"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_espacos"
         android:name="com.example.eventeasy.ui.home.EspacosActivity"
         android:label="Espaços"
@@ -38,5 +38,5 @@
     <fragment
         android:id="@+id/nav_sair"
         android:label="Sair" />
-    
+
 </navigation>

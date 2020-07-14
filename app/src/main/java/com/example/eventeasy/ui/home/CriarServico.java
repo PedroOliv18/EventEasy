@@ -2,7 +2,10 @@ package com.example.eventeasy.ui.home;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
 import android.content.Intent;
@@ -23,6 +26,7 @@ import com.example.eventeasy.Conexao;
 import com.example.eventeasy.MainActivity;
 import com.example.eventeasy.MenuInicialActivity;
 import com.example.eventeasy.R;
+import com.google.android.material.navigation.NavigationView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -51,6 +55,7 @@ public class CriarServico extends AppCompatActivity {
         setTitle("");
         //Seta voltar no appBar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         tituloServico = (EditText) findViewById(R.id.tituloServico);
         precoServico = (EditText) findViewById(R.id.precoServico);

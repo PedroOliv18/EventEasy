@@ -25,7 +25,7 @@
                     android:title="Criar Anúncio" />
                 <item android:id="@+id/nav_meusAnuncios"
                     android:icon="@drawable/ic_talento"
-                    android:title="Meus Anúncio" />
+                    android:title="Meus Anúncios" />
                 <item android:id="@+id/nav_sair"
                     android:icon="@drawable/ic_fora"
                     android:title="Sair" />
