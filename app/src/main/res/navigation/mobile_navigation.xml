@@ -13,15 +13,15 @@
 
     <fragment
         android:id="@+id/nav_espacos"
-        android:name="com.example.eventeasy.ui.home.EspacosFragment"
+        android:name="com.example.eventeasy.ui.home.EspacosActivity"
         android:label="Espaços"
-        tools:layout="@layout/espacos_fragment" />
+        tools:layout="@layout/activity_espacos" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_servicos"
-        android:name="com.example.eventeasy.ui.home.ItemServicoFragment"
+        android:name="com.example.eventeasy.ui.home.ServicosActivity"
         android:label="Serviços"
-        tools:layout="@layout/fragment_item_servico_list" />
+        tools:layout="@layout/activity_servicos" />
 
     <activity
         android:id="@+id/nav_criarAnuncio"

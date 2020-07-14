@@ -20,7 +20,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
-            android:background="#CFCCCC"
+            app:srcCompat="@drawable/img2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -175,12 +175,27 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
+            android:background="@drawable/bordaedit"
             android:ems="10"
             android:inputType="textPersonName"
-            android:background="@drawable/bordaedit"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/btEscolher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/botaoinicio"
+            android:text="Escolher imagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enderecoServico" />
 
         <Button
             android:id="@+id/adicionarServico"
@@ -196,7 +211,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enderecoServico" />
+            app:layout_constraintTop_toBottomOf="@+id/btEscolher" />
+
+
+        <Button
+            android:id="@+id/btLista"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/botaoinicio"
+            android:text="Ver serviços"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adicionarServico" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
